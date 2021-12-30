@@ -17,6 +17,8 @@ module.exports = function(eleventyConfig) {
 
   // Alias `layout: post` to `layout: layouts/post.njk`
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  // Alias `layout: post` to `layout: layouts/post.njk`
+  eleventyConfig.addLayoutAlias("wpis", "layouts/wpis.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
@@ -44,11 +46,25 @@ module.exports = function(eleventyConfig) {
     return Math.min.apply(null, numbers);
   });
 
+  eleventyConfig.addFilter("img", (imageName) => {
+    return "/img/" + imageName;
+  });
+
   function filterTagList(tags) {
-    return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
+    return (tags || []).filter(tag => ["all", "nav", "post", "posts", "blog"].indexOf(tag) === -1);
   }
 
-  eleventyConfig.addFilter("filterTagList", filterTagList)
+  eleventyConfig.addFilter("filterTagList", filterTagList);
+
+  eleventyConfig.addFilter("xxx", value =>"xxx");
+
+  eleventyConfig.addFilter('printKeys', (obj) => {
+    let str = "";
+    Object.keys(obj).forEach(k => {
+      str += "\n\t" + k + " ::: " + typeof(obj[k]);
+    });
+    return str;
+  });
 
   // Create an array of all tags
   eleventyConfig.addCollection("tagList", function(collection) {
@@ -79,6 +95,8 @@ module.exports = function(eleventyConfig) {
     slugify: eleventyConfig.getFilter("slug")
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  
 
   // Override Browsersync defaults (used only with --serve)
   eleventyConfig.setBrowserSyncConfig({

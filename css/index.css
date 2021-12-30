@@ -33,6 +33,12 @@ p,
 .tmpl-post li {
   line-height: 1.45;
 }
+.tmpl-post {
+  background: orangered;
+}
+.tmpl-wpis {
+  background: lightblue;
+}
 a[href] {
   color: var(--blue);
 }

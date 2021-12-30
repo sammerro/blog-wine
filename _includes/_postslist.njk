@@ -2,7 +2,6 @@
 {% for post in postslist | reverse %}
   <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
     <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <img src="{{post.data.heroImage | img }}" alt="montaine">
     <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
     {% for tag in post.data.tags | filterTagList %}
       {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
@@ -11,22 +10,3 @@
   </li>
 {% endfor %}
 </ol>
-
-<h3>debugging...</h3>
-  <h4>
-    {{post.data.title}}
-  </h4>
-{% for post in postslist %}
-<pre style="background: #eee; padding: 0.5rem;">
-<code>{{ post | printKeys }}</code>
-    template:
-    <code style="color: orangered;">
-      {{post.data | printKeys}}
-    </code>
-      template.page:
-      <code style="color: blue;">
-        {{post.data.page | printKeys}}
-      </code>
-</pre>
-<hr />
-{% endfor %}
