@@ -1,3 +1,8 @@
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+$michal: #456;
 /* Colors */
 :root {
   --lightgray: #e0e0e0;
@@ -35,6 +40,7 @@ p,
 }
 .tmpl-post {
   background: orangered;
+  color: $michal;
 }
 .tmpl-wpis {
   background: lightblue;
