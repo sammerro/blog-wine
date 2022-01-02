@@ -24,9 +24,9 @@
       </div>
     </header>
 
-    {# {% if hero %} #}
+    {% if heroImage %}
     {% include "hero.njk" %}
-    {# {% endif %} #}
+    {% endif %}
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}

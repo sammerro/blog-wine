@@ -16,11 +16,16 @@
 /* layout */
 @import "layout/container";
 
+/* templates */
+@import "templates/tmpl-wpis";
+
 /* components */
 @import "components/header";
 @import "components/footer";
 @import "components/post-content";
 @import "components/hero";
+@import "components/post-card";
+@import "components/post-list";
 
 /* utils */
 @import "utils/flex";

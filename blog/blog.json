@@ -1,7 +1,10 @@
 {
-  "heroImage": "mountain.png",
   "tags": [
     "blog"
   ],
+  "heroImage": "mountain.png",
+  "imgAlt": "generic image alt",
+  "cardImage": "mountain.png",
+  "cardImageAlt": "generic image alt",
   "layout": "wpis"
 }

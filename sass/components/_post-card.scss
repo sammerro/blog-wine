@@ -1,0 +1,34 @@
+.post-card {
+
+    &__title {
+        text-decoration: none; 
+        color: $color-gray-dk4;
+    }
+
+    &__title:hover {
+        text-decoration: underline;
+    }
+
+    &__title:visited, &__title:active {
+        color: $color-gray-dk1;
+    }
+
+    &__img-container {
+        height: 100px;
+        overflow: hidden; 
+    }
+
+    &__img {
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    &__date {
+        display: block;
+        background: $color-primary-dk1;
+        color: $color-gray-lt4;
+        word-break: keep-all;
+        width: max-content;
+        padding: 4px 8px;
+    }
+}

@@ -1,10 +1,12 @@
 ---
 title: Cognac
-description: Wpis o Cognac - 
+description: Wpis o Cognac
 tags:
   - mocne
   - france
   - brandy
+heroImage: cognac.png
+gridImage: cognac.png
 ---
 
 COGNAC akapit 6
