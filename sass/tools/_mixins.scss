@@ -1,0 +1,56 @@
+@mixin fontTitle {
+  letter-spacing: 0.02em;
+  font-family: "EB Garamond", serif-apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+@mixin fontText {
+  letter-spacing: initial;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@mixin headerPadding{
+  padding: 0 $spacing-11;
+
+  @media (max-width: 990px) {
+    padding: 0 $spacing-11;
+  }
+}
+
+@mixin textPreset1 {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-text-md);
+  line-height: var(--line-height-md);
+}
+
+@mixin textPreset2 {
+  font-family: var(--ff-sans);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-md);
+}
+
+@mixin textPreset3 {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-text-lg);
+  line-height: var(--line-height-md);
+}
+
+@mixin titlePreset1 {
+  font-family: var(--ff-title);
+  font-size: var(--fs-title-lg);
+  line-height: var(--line-height-sm);
+}
+
+@mixin titlePreset2 {
+  font-family: var(--ff-title);
+  font-size: var(--fs-lg);
+  line-height: var(--line-height-md);
+}
+
+@mixin titlePreset3 {
+  font-family: var(--ff-title);
+  font-size: var(--fs-title-xs);
+  line-height: var(--line-height-md);
+}

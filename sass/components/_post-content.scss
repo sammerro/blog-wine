@@ -1,0 +1,24 @@
+.post-content {
+  padding-bottom: $spacing-9;
+
+  p {
+    font-size: $fs-text-xl;
+    margin-bottom: $spacing-7;
+  }
+
+  section {
+    margin-top: $spacing-8;
+  }
+
+  h2 {
+    margin-bottom: $spacing-7;
+    font-size: $fs-title-md;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+  }
+
+}
+

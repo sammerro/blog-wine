@@ -1,0 +1,50 @@
+.header {
+  background: var(--color-p);
+  background: $bg-header;
+  padding: $spacing-4 $spacing-11;
+
+  @media (max-width: 990px) {
+    padding: 0 $spacing-11;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  
+  &__logo {
+    display: block;
+    margin-right: 16px;
+  }
+  
+  &__title {
+    color: $color-gray-lt4;
+    font-size: $fs-title-xs;
+    color: $color-gray-lt4;
+    display: block;
+    margin: 0;
+  }
+
+  &__nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 auto;
+  }
+  
+  &__nav-item {
+    color: $color-gray-lt4;
+    margin-right: 1em;
+    display: inline-block;
+
+  }
+  &__nav-item--active {
+    color: $color-gray-lt2;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.container--small {
+  max-width: 550px;
+}
+
+.container--wide {
+  max-width: initial;
+  margin: auto;
+}

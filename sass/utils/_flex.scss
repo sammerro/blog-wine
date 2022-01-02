@@ -1,0 +1,30 @@
+.flex {
+  display: flex;
+
+  &--col {
+    flex-direction: row;
+  }
+
+  &--jc {
+    justify-content: center;
+  }
+
+  &--jsb {
+    justify-content: space-between;
+  }
+  &--end {
+    justify-content: flex-end;
+  }
+
+  &--ac {
+    align-items: center;
+  }
+
+  &--ae {
+    align-items: flex-end;
+  }
+
+  &--ab {
+    align-items: baseline;
+  }
+}

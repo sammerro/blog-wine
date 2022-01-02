@@ -56,8 +56,6 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("filterTagList", filterTagList);
 
-  eleventyConfig.addFilter("xxx", value =>"xxx");
-
   eleventyConfig.addFilter('printKeys', (obj) => {
     let str = "";
     Object.keys(obj).forEach(k => {
@@ -77,7 +75,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // // Copy the `img` and `css` folders to the output
-  // eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("img");
   // eleventyConfig.addPassthroughCopy("css");
 
   // Customize Markdown library and settings:
