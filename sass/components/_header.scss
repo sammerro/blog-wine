@@ -3,10 +3,6 @@
   background: $bg-header;
   padding: $spacing-4 $spacing-11;
 
-  @media (max-width: 990px) {
-    padding: 0 $spacing-11;
-  }
-
   &__inner {
     display: flex;
     align-items: flex-end;
