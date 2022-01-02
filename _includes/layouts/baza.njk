@@ -24,6 +24,10 @@
       </div>
     </header>
 
+    {# {% if hero %} #}
+    {% include "hero.njk" %}
+    {# {% endif %} #}
+
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
       {{ content | safe }}
     </main>
