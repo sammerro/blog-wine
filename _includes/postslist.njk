@@ -16,7 +16,7 @@
   {% for post in postslist | reverse %}
       <li class="post-card">
         <a href="{{ post.url | url }}" class="post-card__title">
-          <h3>
+          <h3 class="u-my-0">
             {{post.data.title}}
           </h3>
         </a>
