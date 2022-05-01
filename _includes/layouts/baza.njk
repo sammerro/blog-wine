@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__inner">
+      <div class="header__inner container-content">
         <a href="{{ '/' | url }}">
           <img class="header__logo" src="{{ 'logo.svg' | img}}" alt="Puste butelki logo" width="42.71" height="38.74">
         </a>
@@ -24,11 +24,11 @@
       </div>
     </header>
 
-    {% if heroImage %}
+    {% if hero %}
     {% include "hero.njk" %}
     {% endif %}
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <main class="{{ templateClass + ' ' if templateClass }}container-content">
       {{ content | safe }}
     </main>
 

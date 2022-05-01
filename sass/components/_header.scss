@@ -1,7 +1,7 @@
 .header {
   background: var(--color-p);
   background: $bg-header;
-  padding: $spacing-4 $spacing-11;
+  padding: $spacing-4 0;
 
   &__inner {
     display: flex;
