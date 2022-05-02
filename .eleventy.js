@@ -3,8 +3,8 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
+// const markdownIt = require("markdown-it");
+// const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function(eleventyConfig) {
   // Add plugins
@@ -15,9 +15,10 @@ module.exports = function(eleventyConfig) {
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
 
-  // Alias `layout: post` to `layout: layouts/post.njk`
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-  // Alias `layout: post` to `layout: layouts/post.njk`
+  // // Alias `layout: post` to `layout: layouts/post.njk`
+  // eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  // // Alias `layout: post` to `layout: layouts/post.njk`
+  eleventyConfig.addLayoutAlias("baza", "layouts/baza.njk");
   eleventyConfig.addLayoutAlias("wpis", "layouts/wpis.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -64,6 +65,8 @@ module.exports = function(eleventyConfig) {
     return str;
   });
 
+
+  // COLLECTIONS___
   // Create an array of all tags
   eleventyConfig.addCollection("tagList", function(collection) {
     let tagSet = new Set();
@@ -73,27 +76,27 @@ module.exports = function(eleventyConfig) {
 
     return filterTagList([...tagSet]);
   });
+  
 
-  // // Copy the `img` and `css` folders to the output
+  // // Copy the `img` folders to the output
   eleventyConfig.addPassthroughCopy("img");
   // eleventyConfig.addPassthroughCopy("css");
 
   // Customize Markdown library and settings:
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.ariaHidden({
-      placement: "after",
-      class: "direct-link",
-      symbol: "#",
-      level: [1,2,3,4],
-    }),
-    slugify: eleventyConfig.getFilter("slug")
-  });
-  eleventyConfig.setLibrary("md", markdownLibrary);
-
+  // let markdownLibrary = markdownIt({
+  //   html: true,
+  //   breaks: true,
+  //   linkify: true
+  // }).use(markdownItAnchor, {
+  //   permalink: markdownItAnchor.permalink.ariaHidden({
+  //     placement: "after",
+  //     class: "direct-link",
+  //     symbol: "#",
+  //     level: [1,2,3,4],
+  //   }),
+  //   slugify: eleventyConfig.getFilter("slug")
+  // });
+  // eleventyConfig.setLibrary("md", markdownLibrary);
   
 
   // Override Browsersync defaults (used only with --serve)
