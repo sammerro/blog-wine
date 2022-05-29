@@ -15,20 +15,26 @@
   <ul class="post-list">
   {% for post in postslist | reverse %}
       <li class="post-card">
-        <a href="{{ post.url | url }}" class="post-card__title">
-          <h3 class="u-my-0">
-            {{post.data.title}}
-          </h3>
-        </a>
         <div class="post-card__img-container">
-          <img src="{{post.data.cardImage | img }}" alt="cardImageAlt">
+        <a href="{{ post.url | url }}">
+          <img class="post-card__img" src="{{post.data.cardImage | img }}" alt="cardImageAlt">
+        </a>
+          <div class="post-card__date-container">
+            <time class="post-card__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          </div>
         </div>
-        <time class="post-card__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        <div class="post-card__text-container">
+              <h3 class="post-card__title">
+                <a class="reset-link" href="{{ post.url | url }}">
+                    {{post.data.title}}
+                </a>
+              </h3>
+        </div>
       </li>
   {% endfor %}
   </ul>
 
-<h3>debugging...</h3>
+{# <h3>debugging...</h3>
   <h4>
     {{post.data.title}}
   </h4>
@@ -44,5 +50,5 @@
         {{post.data.page | printKeys}}
       </code>
 </pre>
-<hr />
-{% endfor %}
+<hr /> 
+{% endfor %}#}

@@ -1,12 +1,16 @@
 ---
 layout: layouts/baza.njk
 permalink: /archiwum/
-templateClass:
+templateClass: u-pt-10
+hero: true
+heroTitle: Archiwum
+heroSubtitle: Archiwum wszytkich wpisów pustych butelek.
+heroImage: kielich.jpg
+heroImageAlt: Kieliszek czerwonego wina z bliska
 eleventyNavigation:
   key: Archiwum
   order: 2
 ---
 
-<h1>Archiwum wszystkich wpisów...</h1>
 {% set postslist = collections.blog %}
 {% include "postslist.njk" %}

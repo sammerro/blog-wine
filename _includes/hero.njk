@@ -1,7 +1,9 @@
 <div class="hero">
-    <img src="{{ heroImage | img }}" alt="{{ imgAlt }}" class="hero__bg-img">
-    <p class="hero__title"> {{heroTitle or title }}  </p>
-    {% if heroSubtitle %}
-        <p class="hero__paragraph">{{heroSubtitle}}</p>
-    {% endif %}
+    <div class="container-content">
+        <img src="{{ heroImage | img }}" alt="{{ imgAlt }}" class="hero__bg-img">
+        <p class="hero__title"> {{heroTitle or title }}  </p>
+        {% if heroSubtitle %}
+            <p class="hero__paragraph">{{heroSubtitle}}</p>
+        {% endif %}
+    </div>
 </div>
