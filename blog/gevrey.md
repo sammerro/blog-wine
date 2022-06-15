@@ -1,10 +1,12 @@
 ---
 title: Pinot noir z Gevrey Chambertine
 description: Wpis o pinot noir z Gevrey Chambertine
+heroImage: "pinot-noir.jpg"
+cardImage: "pinot-noir.jpg"
 tags:
-  - red wine
+  - red
   - burgundia
-  - francja
+  - france
 ---
 pinot noir... akapit pierwszy
 

@@ -1,6 +1,8 @@
 ---
 title: pinot gris
 description: Wpis o pinot gris
+heroImage: "pinot-gris.jpg"
+cardImage: "pinot-gris.jpg"
 tags:
   - white wine
   - italy

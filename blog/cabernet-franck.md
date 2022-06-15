@@ -1,6 +1,8 @@
 ---
-title: Chardonnay Kaliforni
-description: Wpis o chardonnay z Kaliforni
+title: Cabernet Franc
+description: Wpis o Super winie cabernet franc
+heroImage: "cabernet-franc.jpg"
+cardImage: "cabernet-franc.jpg"
 tags:
   - white wine
   - usa

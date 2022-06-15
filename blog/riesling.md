@@ -1,14 +1,14 @@
 ---
-title: Chardonnay Kaliforni
-description: Wpis o chardonnay z Kaliforni
+title: Riesling
+description: Riesling opis.
+heroImage: "riesling.jpg"
+cardImage: "riesling.jpg"
 tags:
   - white wine
-  - usa
-  - kalifornia
+  - germany
 ---
-chardonnay... akapit pierwszy
-
-chardonnay ... akapit drugi
+RIIIIEESLING
+lorem234
 
 ![alt gora](/img/mountain.png)
 

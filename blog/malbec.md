@@ -1,14 +1,16 @@
 ---
-title: Chardonnay Kaliforni
-description: Wpis o chardonnay z Kaliforni
+title: Malbec
+description: Buenos 
+heroImage: "malbec.jpg"
+cardImage: "malbec.jpg"
 tags:
-  - white wine
+  - red wine
   - usa
   - kalifornia
 ---
-chardonnay... akapit pierwszy
+Malbec... akapit pierwszy
 
-chardonnay ... akapit drugi
+Malbec... akapit drugi
 
 ![alt gora](/img/mountain.png)
 

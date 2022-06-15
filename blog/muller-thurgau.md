@@ -1,14 +1,12 @@
 ---
-title: muller Kaliforni
-description: Wpis o muller z Kaliforni
+title: Muller
+description: Steffen Müller? Nie, to o winie!
 tags:
   - white wine
   - usa
   - kalifornia
 ---
-muller... akapit pierwszy
-
-muller ... akapit drugi
+Muller muller muller muller
 
 ![alt gora](/img/mountain.png)
 

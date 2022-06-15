@@ -12,12 +12,14 @@
 {% endfor %}
 </ol> #}
 
+{% set imageUrl = value %}
+
   <ul class="post-list">
   {% for post in postslist | reverse %}
       <li class="post-card">
         <div class="post-card__img-container">
         <a href="{{ post.url | url }}">
-          <img class="post-card__img" src="{{post.data.cardImage | img }}" alt="cardImageAlt">
+          <img class="post-card__img" src="{{ (post.data.imageBase + post.data.cardImage) | img }}" alt="cardImageAlt">
         </a>
           <div class="post-card__date-container">
             <time class="post-card__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>

@@ -1,10 +1,10 @@
 ---
-title: Chardonnay Kaliforni
-description: Wpis o chardonnay z Kaliforni
+title: Merlot
+description: Merlot perlo
 tags:
-  - white wine
-  - usa
-  - kalifornia
+  - red
+  - bordeaux
+  - france
 ---
 chardonnay... akapit pierwszy
 

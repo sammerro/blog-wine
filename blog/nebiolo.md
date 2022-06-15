@@ -1,6 +1,8 @@
 ---
 title: Chardonnay Kaliforni
 description: Wpis o chardonnay z Kaliforni
+heroImage: "nebiolo.jpg"
+cardImage: "nebiolo.jpg"
 tags:
   - red wine
   - nebiolo

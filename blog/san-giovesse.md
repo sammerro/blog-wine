@@ -1,14 +1,12 @@
 ---
-title: Chardonnay Kaliforni
-description: Wpis o chardonnay z Kaliforni
+title: San Giovese
+description: San Giovese jak w grze o robieniu wina.
 tags:
-  - white wine
-  - usa
-  - kalifornia
+  - san giovese
+  - red
+  - italy
 ---
-chardonnay... akapit pierwszy
-
-chardonnay ... akapit drugi
+chardonnay...
 
 ![alt gora](/img/mountain.png)
 
