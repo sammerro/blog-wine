@@ -3,5 +3,6 @@
     "blog"
   ],
   "imageBase": "blog/",
-  "layout": "wpis"
+  "layout": "wpis",
+  "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro minima, nemo dolorem magni aut unde nisi nostrum earum ipsa facilis."
 }

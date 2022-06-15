@@ -14,10 +14,12 @@
   <body>
     <header class="header">
       <div class="header__inner container-content">
-        <a href="{{ '/' | url }}">
+        <a class="reset-link" href="{{ '/' | url }}">
           <img class="header__logo" src="{{ 'logo.svg' | img}}" alt="Puste butelki logo" width="42.71" height="38.74">
         </a>
-        <h1 class="header__title" href="{{ '/' | url }}">{{ metadata.title }}</h1>
+        <a class="reset-link" href="{{ '/' | url }}">
+          <h1 class="header__title" href="{{ '/' | url }}">{{ metadata.title }}</h1>
+        </a>
         <ul class="header__nav">
         {%- for entry in collections.all | eleventyNavigation %}
           <li class="header__nav-item{% if entry.url == page.url %} header__nav-item--active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>

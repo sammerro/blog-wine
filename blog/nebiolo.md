@@ -1,12 +1,12 @@
 ---
-title: Chardonnay Kaliforni
-description: Wpis o chardonnay z Kaliforni
-heroImage: "nebiolo.jpg"
-cardImage: "nebiolo.jpg"
+title: Nebbiolo
+description: Włoski powód do dumy
+heroImage: "nebbiolo.jpg"
+cardImage: "nebbiolo.jpg"
 tags:
-  - red wine
-  - nebiolo
-  - france
+  - red
+  - nebbiolo
+  - italy
 ---
 chardonnay... akapit pierwszy
 
@@ -14,6 +14,6 @@ chardonnay ... akapit drugi
 
 ![alt gora](/img/mountain.png)
 
-## NEBIOLO
+## NEBBIOLO
 
 akapit trzeci
