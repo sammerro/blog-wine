@@ -1,3 +1,7 @@
+
+{% if imageBase %}
+    {% set heroImage = imageBase + heroImage %}
+{% endif %}
 <div class="hero">
     <div class="container-content">
         <img src="{{ heroImage | img }}" alt="{{ imgAlt }}" class="hero__bg-img">
