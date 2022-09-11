@@ -12,7 +12,7 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
   </head>
-  <body class="header-main-footer-wrapper">
+  <body class="header-main-footer-wrapper{{' header-main-footer-wrapper--hero' if hero}}">
     <header class="header">
       <div class="header__inner container-content">
         <a class="reset-link" href="{{ '/' | url }}">
