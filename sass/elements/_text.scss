@@ -12,6 +12,10 @@ h1 {
   font-size: $fs-title-md;
 }
 
+h1, h2 {
+  font-weight: 400;
+}
+
 p {
   color: $color-primary-dk4;
   line-height: 1.5;
