@@ -1,6 +1,7 @@
 .post-link {
-    color: $color-accent-dk3;
-    &:link, &:active {
-        color: $color-accent-dk3;
+    text-decoration: none;
+    color: $color-accent-dk2;
+    &:hover, &:active {
+        color: $color-accent-dk4;
     }
 }
