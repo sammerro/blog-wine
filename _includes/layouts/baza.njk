@@ -33,7 +33,7 @@
     {% include "hero.njk" %}
     {% endif %}
 
-    <main class="{{ templateClass + ' ' if templateClass }}container-content">
+    <main class="{{ templateClass + ' ' if templateClass }} {{containerClass if containerClass else 'container-content'}}">
       {{ content | safe }}
     </main>
 
