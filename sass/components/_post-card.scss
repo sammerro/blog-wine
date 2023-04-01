@@ -50,6 +50,11 @@
         width: max-content;
         padding: 4px 8px;
     }
+    
+    &__date--wpis {
+        border-radius: 0 0 4px 0;
+        padding: 4px 12px;
+    }
 
     // TODO: move to separate comopnent
     &__date-container {
